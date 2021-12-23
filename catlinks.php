@@ -34,7 +34,7 @@ if($row['categoryId'] == ''){
                 try {
                     $stmt = $db->prepare('
                         SELECT 
-                            sahil_blog.articleId,sahil_blog.featuredImg, sahil_blog.articleTitle, sahil_blog.articleSlug, sahil_blog.articleDescrip, sahil_blog.articleDate 
+                            sahil_blog.articleId,sahil_blog.featuredImg, sahil_blog.articleTitle, sahil_blog.author,sahil_blog.articleSlug, sahil_blog.articleDescrip, sahil_blog.articleDate 
                         FROM 
                             sahil_blog,
                             sahil_cat_links
@@ -53,6 +53,7 @@ if($row['categoryId'] == ''){
                                 <img src="../assets/Blog-post/'.$row['featuredImg'].'" class="img" alt="blog1">
                             </div>
                             <div class="post-info flex-row">';
+                                echo'<span><i class="fas fa-pen-nib text-gray">&nbsp;</i>'.$row['author'].'&nbsp;&nbsp;&nbsp;&nbsp;</i>';
                                 echo'<span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;'.date('jS M Y', strtotime($row['articleDate'])). '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-hashtag text-gray"></i></span>';
                                 $stmt2 = $db->prepare('SELECT categoryName, categorySlug   FROM sahil_category, sahil_cat_links WHERE sahil_category.categoryId = sahil_cat_links.categoryId AND sahil_cat_links.articleId = :articleId');
                                 $stmt2->execute(array(':articleId' => $row['articleId']));

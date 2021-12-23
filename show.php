@@ -1,6 +1,6 @@
 <?php
 require_once("includes/config.php");
-$stmt = $db->prepare('SELECT articleId,articleDescrip, articleSlug ,articleTitle, articleContent, articleTags, articleDate, featuredImg  FROM sahil_blog WHERE articleSlug = :articleSlug and status="Published"'); 
+$stmt = $db->prepare('SELECT *  FROM sahil_blog WHERE articleSlug = :articleSlug and status="Published"'); 
 $stmt->execute(array(':articleSlug' => $_GET['id']));           
 $row=$stmt->fetch();
 
@@ -38,6 +38,7 @@ exit;
                             <img src="assets/Blog-post/'.$row['featuredImg'].'" class="img">
                             </div>
                             <div class="post-info flex-row">';
+                                echo'<span><i class="fas fa-pen-nib text-gray">&nbsp;</i>'.$row['author'].'&nbsp;&nbsp;&nbsp;&nbsp;</i>';
                                 echo'<span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;&nbsp;&nbsp;'.date('jS M Y', strtotime($row['articleDate'])). '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-hashtag text-gray"></i></span>';
                                 $stmt2 = $db->prepare('SELECT categoryName, categorySlug   FROM sahil_category, sahil_cat_links WHERE sahil_category.categoryId = sahil_cat_links.categoryId AND sahil_cat_links.articleId = :articleId');
                                 $stmt2->execute(array(':articleId' => $row['articleId']));
