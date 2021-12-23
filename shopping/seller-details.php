@@ -1,10 +1,15 @@
 <?php
 include 'config.php';
 session_start();
-if(!isset($_SESSION['user_id']) && $_SESSION['user_role'] != 'user') {
+if (!isset($_SESSION['user_id'])){
     header("Location: " . $hostname);
 }
-include 'header.php'; ?>
+include 'header.php';
+if($_SESSION['user_role'] != 'user') {
+    echo '<center><h4><br><br>You are blocked by Admin. To unblock Please Contact Sahil Kumar (+919814740275)</h4><br><br><br><br></center>';
+}
+?>
+    <?php if($_SESSION['user_role'] == 'user') { ?>
     <div id="user_profile-content">
         <div class="container">
             <div class="row">
@@ -28,10 +33,6 @@ include 'header.php'; ?>
                                         <td><?php echo $row["l_name"]; ?></td>
                                     </tr>
                                     <tr>
-                                        <td><b>Username :</b></td>
-                                        <td><?php echo $row["username"]; ?></td>
-                                    </tr>
-                                    <tr>
                                         <td><b>Mobile :</b></td>
                                         <td><?php echo $row["mobile"]; ?></td>
                                     </tr>
@@ -48,10 +49,12 @@ include 'header.php'; ?>
                         }
                         ?>
                         <a class="modify-btn btn" href="tel:<?php echo $row["mobile"]; ?>">Call Now</a>
+                        <a class="modify-btn btn" href="./">Continue Shopping</a>
                 </div>
             </div>
         </div>
     </div>
+    <?php }?>
 <?php include 'footer.php';
 
 
