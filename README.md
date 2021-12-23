@@ -5,7 +5,7 @@
   ptublog.in
 </h1>
 <p align="center">
-  IKGPTU Blogging & Shopping website <a href="https://brittanychiang.com" target="_blank">ptublog.in</a> built by <a href="https://mrsahil.in/" target="_blank">Gatsby</a> and hosted with <a href="https://aws.amazon.com/" target="_blank">AWS</a>
+  IKGPTU Blogging & Shopping website <a href="https://brittanychiang.com" target="_blank">ptublog.in</a> built by <a href="https://mrsahil.in/" target="_blank">Sahil Kumar</a> and hosted with <a href="https://aws.amazon.com/" target="_blank">AWS</a>
 </p>
 
 ![demo](https://repository-images.githubusercontent.com/441117669/b3cb4626-6e48-4076-98f4-f01e019d24ac)
