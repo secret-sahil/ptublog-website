@@ -22,6 +22,6 @@ ptublog.in is blogging as well as shopping website made for IKGPTU university. I
 - User block system. After blocking user will not able to sell product, edit product and view seller contact details.
 - Linked with discord webhook to maintain all logs.
 
-## Installation on localhost
+## Installation
 
-ptublog.in use [XAMPP](https://www.apachefriends.org/index.html) to run.
+You can use [XAMPP](https://www.apachefriends.org/index.html) to run it on localhost you just need to change some links from https://ptublog.in/ to https://localhost/
