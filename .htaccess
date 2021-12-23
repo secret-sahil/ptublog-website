@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase //
+RewriteRule ^category/(.*)$ catlinks.php?id=$1 [L]
+RewriteRule ^page/(.*)$ page.php?pageId=$1 [L]
+RewriteRule ^tag/(.*)$ taglinks.php?id=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+RewriteRule ^(.*)$ show.php?id=$1 [QSA,L]
