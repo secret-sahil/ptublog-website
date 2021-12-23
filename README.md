@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://ptublog.in/assets/favicon.ico" width="100" />
+  <img alt="Logo" src="https://cdn.discordapp.com/attachments/864941867220074497/923553906380931122/ptublog.in-logo.png" width="100" />
 </div>
 <h1 align="center">
   ptublog.in
