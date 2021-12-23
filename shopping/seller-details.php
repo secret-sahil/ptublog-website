@@ -6,7 +6,7 @@ if (!isset($_SESSION['user_id'])){
 }
 include 'header.php';
 if($_SESSION['user_role'] != 'user') {
-    echo '<center><h4><br><br>You are blocked by Admin. To unblock Please Contact Sahil Kumar (+919814740275)</h4><br><br><br><br></center>';
+    echo '<center><h4><br><br> You are blocked by Admin. To unblock Please Contact Sahil Kumar (+919814740275)</h4><br><br><br><br></center>';
 }
 ?>
     <?php if($_SESSION['user_role'] == 'user') { ?>
@@ -56,7 +56,5 @@ if($_SESSION['user_role'] != 'user') {
     </div>
     <?php }?>
 <?php include 'footer.php';
-
-
 ?>
   
