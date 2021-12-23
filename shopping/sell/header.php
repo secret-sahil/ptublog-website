@@ -50,7 +50,7 @@
                                 echo 'Hi '.$_SESSION["username"]; ?>
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="php_files/logout.php">Home</a></li>
+                                <li><a href="../">Home</a></li>
                                 <li><a href="../user_profile.php">My Profile</a></li>
                                 <li><a href="php_files/logout.php">Logout</a></li>
                             </ul>
