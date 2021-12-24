@@ -1,5 +1,14 @@
-![N|Solid](https://ptublog.in/assets/favicon.ico)
-# ptublog.in website
+<div align="center">
+  <img alt="Logo" src="https://cdn.discordapp.com/attachments/864941867220074497/923553906380931122/ptublog.in-logo.png" width="100" />
+</div>
+<h1 align="center">
+  ptublog.in
+</h1>
+<p align="center">
+  IKGPTU Blogging & Shopping website <a href="https://brittanychiang.com" target="_blank">ptublog.in</a> built by <a href="https://mrsahil.in/" target="_blank">Sahil Kumar</a> and hosted with <a href="https://aws.amazon.com/" target="_blank">AWS</a>
+</p>
+
+![demo](https://repository-images.githubusercontent.com/441117669/b3cb4626-6e48-4076-98f4-f01e019d24ac)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://ptublog.in/)
 
@@ -13,6 +22,6 @@ ptublog.in is blogging as well as shopping website made for IKGPTU university. I
 - User block system. After blocking user will not able to sell product, edit product and view seller contact details.
 - Linked with discord webhook to maintain all logs.
 
-## Installation on localhost
+## Installation
 
-ptublog.in use [XAMPP](https://www.apachefriends.org/index.html) to run.
+You can use [XAMPP](https://www.apachefriends.org/index.html) to run it on localhost you just need to change some links from https://ptublog.in/ to https://localhost/
