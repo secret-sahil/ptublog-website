@@ -31,7 +31,7 @@ if($_SESSION['user_role'] != 'user') {
                                     <tr>
                                         <td><b>Last Name :</b></td>
                                         <td><?php echo $row["l_name"]; ?></td>
-                                    </tr>
+                                    </tr> 
                                     <tr>
                                         <td><b>Mobile :</b></td>
                                         <td><?php echo $row["mobile"]; ?></td>
