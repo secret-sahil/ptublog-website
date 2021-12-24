@@ -43,7 +43,7 @@ if($_SESSION['user_role'] != 'user') {
                                     <tr>
                                         <td><b>City :</b></td>
                                         <td><?php echo $row["city"]; ?></td>
-                                    </tr>
+                                    </tr> 
                                 </table>
                             <?php }
                         }
