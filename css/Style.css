@@ -318,6 +318,10 @@ main .post-content .post-title a{
     font-size: 1.5rem;
 }
 
+main .post-content .post-title img{
+    width: -webkit-fill-available;
+}
+
 .site-content .post-content .post-title .post-btn{
     border-radius: 0;
     padding: .7rem 1.5rem;
