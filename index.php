@@ -6,11 +6,9 @@ require_once('includes/config.php'); ?>
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://ptublog.in/" />
     <meta property="og:image" content="https://ptublog.in/assets/ptu-blog.png" />
+    <meta property="twitter:image" content="https://ptublog.in/assets/ptu-blog.png" />
     <meta property="og:description" content="On ptublog.in you found many articles related to Punjab Technical University. It's PTU blog on which authors post frequently on different topics about university." />
     <meta property="og:site_name" content="PTU BLOG" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="600" />
     <title>Punjab Technical University - Blog</title>
     <style>
     #keyword{
