@@ -10,7 +10,6 @@
 
 ![demo](https://repository-images.githubusercontent.com/441117669/b3cb4626-6e48-4076-98f4-f01e019d24ac)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://ptublog.in/)
 
 ptublog.in is blogging as well as shopping website made for IKGPTU university. In this authors post articles related to IKGPTU frequently and aslo on it's shopping interface students and buy/sell their materials. It's a dinamic website and managed from admin panel.
 
